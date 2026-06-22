@@ -16,7 +16,7 @@ def test_send_prompt_valid():
         assert response == "Resposta de teste"
 
 def test_send_prompt_empty():
-    """Testa validação quando o prompt está vazio"""
+    """Testa validação de prompt vazio"""
     client = GeminiClient()
     client.api_key = "test-key"
     with pytest.raises(ValueError):
